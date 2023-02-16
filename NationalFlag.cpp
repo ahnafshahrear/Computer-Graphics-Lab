@@ -15,7 +15,7 @@ int main()
     setfillstyle(SOLID_FILL, GREEN);
     floodfill(51, 51, GREEN);
 
-    // Red Rectangle
+    // Red Circle
     setcolor(RED);
     circle(195, 140, 60);
     setfillstyle(SOLID_FILL, RED);
