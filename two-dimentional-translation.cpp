@@ -6,7 +6,7 @@ using namespace std;
 int gd = DETECT, gm;
 int size;
 int x[10], y[10];
-int sfx, sfy;
+double tx, ty;
 
 void draw()
 {
@@ -16,12 +16,12 @@ void draw()
     }
 }
 
-void scale()
+void translate()
 {
     for (int i = 0; i < size; i++)
     {
-        x[i] = x[i] * sfx;
-        y[i] = y[i] * sfy;
+        x[i] = x[i] + tx;
+        y[i] = y[i] + ty;
     }
 }
 
@@ -34,13 +34,13 @@ int main()
     {
         cin >> x[i] >> y[i];
     }
-    cout << "Enter scaling factors(sfx & sfy):";
-    cin >> sfx >> sfy;
+    cout << "Enter translation factors(tx & ty):";
+    cin >> tx >> ty;
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
-    setcolor(WHITE);
-    draw();
-    scale();
     setcolor(RED);
+    draw();
+    translate();
+    setcolor(WHITE);
     draw();
     getch();
     return 0;
@@ -55,6 +55,6 @@ Enter each vertex coordinates:
 1 100
 100 100
 100 1
-Enter scale factors(sfx & sfy):3 2
+Enter translation factors(sfx & sfy):150 50
 */
 

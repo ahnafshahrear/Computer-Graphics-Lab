@@ -1,6 +1,5 @@
 # Computer Graphics
 ### 3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi
-### Course Code: CSE3222
 
 ## Author
 - **Ahnaf Shahrear Khan, Computer Science & Engineering, University of Rajshahi**
