@@ -1,12 +1,11 @@
 # Computer Graphics
 ### 3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi
+### Course Code: CSE3222
 
 ## Author
-- Ahnaf Shahrear Khan - [@ahnafshahrear](https://github.com/ahnafshahrear)
-- Gmail - ahnafshahrearkhan@gmail.com
-
-## Language
-- C++
+- **Ahnaf Shahrear Khan, Computer Science & Engineering, University of Rajshahi**
+- **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear)**
+- **Gmail: ahnafshahrearkhan@gmail.com**
 
 ## CodeBlocks setup instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
@@ -19,7 +18,7 @@
 - Go to "Linker Settigns" -> Other linker options & add **"-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32"**
 
 ## Index
-- Draw the national flag of Bangladesh
+- Draw the national flag of Bangladesh ✓
 - Hidden surface elimination / visual surface ditection
 - 2D Translation, Rotation & Scaling
 - Create a Sphere, Elipsoid & Torus
