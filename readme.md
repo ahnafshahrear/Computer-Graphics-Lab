@@ -19,7 +19,7 @@
 ## Index
 - Draw the national flag of Bangladesh ✓
 - Hidden surface elimination / visual surface ditection
-- 2D Translation, Rotation & Scaling
+- 2D Translation, Rotation & Scaling ✓
 - Create a Sphere, Elipsoid & Torus
 - Draw a super Elipsoid
 - Create Bejier Curve
