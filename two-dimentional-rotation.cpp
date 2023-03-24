@@ -3,10 +3,15 @@
 
 using namespace std;
 
+// To convert Degree to Radian
+#define Sin(x) sin(x * acos(-1.0) / 180)
+#define Cos(x) cos(x * acos(-1.0) / 180)
+
 int gd = DETECT, gm;
-int size;
-int x[10], y[10];
-int tx, ty;
+int size; // Total number of vertices
+double x[10], y[10];
+double angle; // Rotation angle
+double xPivot, yPivot; // Pivot points
 
 void draw()
 {
@@ -16,12 +21,14 @@ void draw()
     }
 }
 
-void translate()
+void rotation()
 {
     for (int i = 0; i < size; i++)
     {
-        x[i] += tx;
-        y[i] += ty;
+        double xShift = x[i] - xPivot, yShift = y[i] - yPivot;
+        x[i] = xPivot + (xShift * Cos(angle)) - (yShift * Sin(angle));
+        y[i] = yPivot + (xShift * Sin(angle)) + (yShift * Cos(angle));
+
     }
 }
 
@@ -34,12 +41,14 @@ int main()
     {
         cin >> x[i] >> y[i];
     }
-    cout << "Enter translation factors(tx & ty): ";
-    cin >> tx >> ty;
+    cout << "Enter rotation angle: ";
+    cin >> angle;
+    cout << "Enter pivot points: ";
+    cin >> xPivot >> yPivot;
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
     setcolor(RED);
     draw();
-    translate();
+    rotation();
     setcolor(WHITE);
     draw();
     getch();
@@ -51,10 +60,11 @@ Input Format:
 
 Enter no. of sides in polygon: 4
 Enter each vertex coordinates:
-1 1
-1 100
 100 100
-100 1
-Enter translation factors(sfx & sfy):150 50
+100 200
+200 200
+200 100
+Enter rotation angle: 45
+Enter pivot points: 200 200
 */
 

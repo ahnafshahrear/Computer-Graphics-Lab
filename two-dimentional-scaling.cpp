@@ -34,7 +34,7 @@ int main()
     {
         cin >> x[i] >> y[i];
     }
-    cout << "Enter scaling factors(sfx & sfy):";
+    cout << "Enter scaling factors(sfx & sfy): ";
     cin >> sfx >> sfy;
     initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
     setcolor(WHITE);
