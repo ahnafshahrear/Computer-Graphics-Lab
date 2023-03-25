@@ -17,7 +17,7 @@ void drawCircle(int xc, int yc, int radius)
             y--;
             p += 4 * (x - y) + 10;
         }
-        else p += 4 * x + 6;
+        else p += (4 * x) + 6;
     }
     for (auto v: points)
     {
@@ -30,12 +30,14 @@ void drawCircle(int xc, int yc, int radius)
 
 int main()
 {
-    int xc, yc, radius;
+    int x_center, yc, radius;
     cout << "Enter the center coordinates: ";
+    // Must enter positive coordinates
     cin >> xc >> yc;
     cout << "Enter the radius: ";
     cin >> radius;
-    int gd = DETECT, gm = DETECT;
+    int gd = DETECT;
+    int gm = DETECT;
     initgraph(&gd, &gm, "");
     drawCircle(xc, yc, radius);
     getch();
@@ -44,6 +46,7 @@ int main()
 
 /*
 Input Format:
+
 Enter the center coordinates: 150 150
 Enter the radius: 125
 */
