@@ -17,14 +17,14 @@
 - Go to "Linker Settigns" -> Other linker options & add **"-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32"**
 
 ## Index
-- Draw the national flag of Bangladesh ✓
-- Hidden surface elimination / visual surface ditection
-- 2D Translation, Rotation & Scaling ✓
-- Create a Sphere, Elipsoid & Torus
-- Draw a super Elipsoid
-- Create Bejier Curve
-- Line Clipping
-- Polygon Clipping 
-- Bresenham line drawing algorithm
-- Bresenham circle drawing algorithm
-- Fractal geometry - snowflake pattern
+- **Draw the national flag of Bangladesh ✓**
+- **Hidden surface elimination / visual surface ditection**
+- **2D Translation, Rotation & Scaling ✓**
+- **Create a Sphere, Elipsoid & Torus**
+- **Draw a super Elipsoid**
+- **Create Bejier Curve**
+- **Cohen Sutherland Line Clipping ✓**
+- **Polygon Clipping** 
+- **Bresenham line drawing algorithm**
+- **Bresenham circle drawing algorithm**
+- **Fractal geometry - snowflake pattern**
