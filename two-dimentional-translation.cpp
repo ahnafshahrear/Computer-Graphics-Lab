@@ -4,21 +4,21 @@
 using namespace std;
 
 int gd = DETECT, gm;
-int polypoint;  // previously this variable was named as 'size', but the line 'using namespace std' implies an error which says, 'size is ambiguous', this is because there is already a function named size() in std. So we changed it to 'polypoint'
+int point;
 int x[10], y[10];
 int tx, ty;
 
 void draw()
 {
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
-        line(x[i], y[i], x[(i + 1) % polypoint], y[(i + 1) % polypoint]);
+        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
     }
 }
 
 void translate()
 {
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
         x[i] += tx;
         y[i] += ty;
@@ -28,9 +28,9 @@ void translate()
 int main()
 {
     cout << "Enter no. of sides in polygon: ";
-    cin >> polypoint;
+    cin >> point;
     cout << "Enter each vertex coordinates:\n";
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
         cin >> x[i] >> y[i];
     }
