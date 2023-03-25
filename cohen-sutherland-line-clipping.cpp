@@ -6,7 +6,7 @@ using namespace std;
 // Defining clipping window
 int xMin = 120, xMax = 500, yMin = 100, yMax = 350;
 
-// Defining region-code
+// Assigning region-code
 int Left = 1, Right = 2, Bottom = 4, Top = 8;
 
 int regionCode(int x, int y)

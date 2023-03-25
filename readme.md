@@ -23,7 +23,7 @@
 - **Create a Sphere, Elipsoid & Torus**
 - **Draw a super Elipsoid**
 - **Create Bejier Curve**
-- **Cohen Sutherland Line Clipping ✓**
+- **Cohen Sutherland Line Clipping Algorithm ✓**
 - **Polygon Clipping** 
 - **Bresenham line drawing algorithm**
 - **Bresenham circle drawing algorithm**
