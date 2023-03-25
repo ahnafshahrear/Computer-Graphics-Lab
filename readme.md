@@ -25,6 +25,6 @@
 - **Create Bejier Curve**
 - **Cohen Sutherland Line Clipping Algorithm ✓**
 - **Polygon Clipping** 
-- **Bresenham line drawing algorithm**
+- **Bresenham Line Drawing Algorithm ✓**
 - **Bresenham circle drawing algorithm**
 - **Fractal geometry - snowflake pattern**
