@@ -4,21 +4,21 @@
 using namespace std;
 
 int gd = DETECT, gm;
-int size;
+int point;
 int x[10], y[10];
 int tx, ty;
 
 void draw()
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < point; i++)
     {
-        line(x[i], y[i], x[(i + 1) % size], y[(i + 1) % size]);
+        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
     }
 }
 
 void translate()
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < point; i++)
     {
         x[i] += tx;
         y[i] += ty;
@@ -28,27 +28,27 @@ void translate()
 int main()
 {
     cout << "Enter no. of sides in polygon: ";
-    cin >> size;
+    cin >> point;
     cout << "Enter each vertex coordinates:\n";
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < point; i++)
     {
         cin >> x[i] >> y[i];
     }
     cout << "Enter translation factors(tx & ty): ";
     cin >> tx >> ty;
-    initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
+    initgraph(&gd, &gm, (char *)"");
     setcolor(RED);
     draw();
     translate();
     setcolor(WHITE);
     draw();
     getch();
+    closegraph();
     return 0;
 }
 
 /*
 Input Format:
-
 Enter no. of sides in polygon: 4
 Enter each vertex coordinates:
 1 1
@@ -57,4 +57,3 @@ Enter each vertex coordinates:
 100 1
 Enter translation factors(sfx & sfy):150 50
 */
-
