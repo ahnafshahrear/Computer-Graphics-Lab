@@ -26,5 +26,5 @@
 - **Cohen Sutherland Line Clipping Algorithm ✓**
 - **Polygon Clipping** 
 - **Bresenham Line Drawing Algorithm ✓**
-- **Bresenham circle drawing algorithm**
+- **Bresenham Circle Drawing Algorithm ✓**
 - **Fractal geometry - snowflake pattern**
