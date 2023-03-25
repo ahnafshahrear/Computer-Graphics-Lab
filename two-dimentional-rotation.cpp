@@ -8,22 +8,22 @@ using namespace std;
 #define Cos(x) cos(x * acos(-1.0) / 180)
 
 int gd = DETECT, gm;
-int polypoint; // Total number of vertices
+int point; // Total number of vertices
 double x[10], y[10];
 double angle; // Rotation angle
 double xPivot, yPivot; // Pivot points
 
 void draw()
 {
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
-        line(x[i], y[i], x[(i + 1) % polypoint], y[(i + 1) % polypoint]);
+        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
     }
 }
 
 void rotation()
 {
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
         double xShift = x[i] - xPivot, yShift = y[i] - yPivot;
         x[i] = xPivot + (xShift * Cos(angle)) - (yShift * Sin(angle));
@@ -35,9 +35,9 @@ void rotation()
 int main()
 {
     cout << "Enter no. of sides in polygon: ";
-    cin >> polypoint;
+    cin >> point;
     cout << "Enter each vertex coordinates:\n";
-    for (int i = 0; i < polypoint; i++)
+    for (int i = 0; i < point; i++)
     {
         cin >> x[i] >> y[i];
     }
