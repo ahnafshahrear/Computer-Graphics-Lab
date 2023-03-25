@@ -3,7 +3,9 @@
 
 using namespace std;
 
-int gd = DETECT, gm;
+int gd = DETECT;
+int gm = DETECT;
+
 int point;
 int x[10], y[10];
 int tx, ty;
@@ -36,19 +38,19 @@ int main()
     }
     cout << "Enter translation factors(tx & ty): ";
     cin >> tx >> ty;
-    initgraph(&gd, &gm, (char *)"");
+    initgraph(&gd, &gm, "");
     setcolor(RED);
     draw();
     translate();
     setcolor(WHITE);
     draw();
     getch();
-    closegraph();
     return 0;
 }
 
 /*
 Input Format:
+
 Enter no. of sides in polygon: 4
 Enter each vertex coordinates:
 1 1

@@ -31,7 +31,8 @@ int main()
     cin >> x1 >> y1;
     cout << "Enter the second coordinate: ";
     cin >> x2 >> y2;
-    int gd = DETECT, gm = DETECT;
+    int gd = DETECT;
+    int gm = DETECT;
     initgraph(&gd, &gm, "");
     drawLine(x1, y1, x2, y2);
     getch();

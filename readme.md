@@ -18,7 +18,7 @@
 
 ## Index
 - **Draw the national flag of Bangladesh ✓**
-- **Hidden surface elimination / visual surface ditection**
+- **Hidden Surface Elimination or Visual Surface Ditection ✓**
 - **2D Translation, Rotation & Scaling ✓**
 - **Create a Sphere, Elipsoid & Torus**
 - **Draw a super Elipsoid**
