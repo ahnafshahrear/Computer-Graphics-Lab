@@ -4,21 +4,21 @@
 using namespace std;
 
 int gd = DETECT, gm;
-int size;
+int polypoint;
 int x[10], y[10];
 int sfx, sfy;
 
 void draw()
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < polypoint; i++)
     {
-        line(x[i], y[i], x[(i + 1) % size], y[(i + 1) % size]);
+        line(x[i], y[i], x[(i + 1) % polypoint], y[(i + 1) % polypoint]);
     }
 }
 
 void scale()
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < polypoint; i++)
     {
         x[i] = x[i] * sfx;
         y[i] = y[i] * sfy;
@@ -28,9 +28,9 @@ void scale()
 int main()
 {
     cout << "Enter no. of sides in polygon: ";
-    cin >> size;
+    cin >> polypoint;
     cout << "Enter each vertex coordinates:\n";
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < polypoint; i++)
     {
         cin >> x[i] >> y[i];
     }
@@ -48,7 +48,6 @@ int main()
 
 /*
 Input Format:
-
 Enter no. of sides in polygon: 4
 Enter each vertex coordinates:
 1 1
@@ -57,4 +56,3 @@ Enter each vertex coordinates:
 100 1
 Enter scale factors(sfx & sfy):3 2
 */
-
