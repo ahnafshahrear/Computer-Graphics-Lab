@@ -1,14 +1,18 @@
 #include<bits/stdc++.h>
 #include<graphics.h>
 
+#define setGraph {int gd = DETECT; int gm = DETECT; initgraph(&gd, &gm, "");}
+
 using namespace std;
 
 void Triangle()
 {
+    int x[] = {10, 50, 100}, y[] = {100, 20, 100};
     setcolor(GREEN);
-    line(10, 100, 50, 20);
-    line(50, 20, 100, 100);
-    line(10, 100, 100, 100);
+    for (int i = 0; i < 3; i++)
+    {
+        line(x[i], y[i], x[(i + 1) % 3], y[(i + 1) % 3]);
+    }
     setfillstyle(SOLID_FILL, GREEN);
     floodfill(50, 25, GREEN);
 }
@@ -33,17 +37,13 @@ int main()
 {
     string sequence;
     cin >> sequence;
-
-    int gd = DETECT, gm = DETECT;
-    initgraph(&gd, &gm, "");
-
+    setGraph;
     for (char x: sequence)
     {
-        if (x == 'R') Circle();
+        if (x == 'C') Circle();
         else if (x == 'T') Triangle();
         else Rectangle();
     }
-
     getch();
     return 0;
 }
