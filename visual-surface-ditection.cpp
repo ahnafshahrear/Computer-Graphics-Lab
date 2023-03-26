@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 #include<graphics.h>
 
-#define setGraph {int gd = DETECT; int gm = DETECT; initgraph(&gd, &gm, "");}
-
 using namespace std;
 
 void Triangle()
@@ -37,7 +35,9 @@ int main()
 {
     string sequence;
     cin >> sequence;
-    setGraph;
+	int gd = DETECT;
+	int gm = DETECT;
+	initgraph(&gd, &gm, "");
     for (char x: sequence)
     {
         if (x == 'C') Circle();

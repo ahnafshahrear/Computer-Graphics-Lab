@@ -30,23 +30,10 @@ void drawCircle(int xc, int yc, int radius)
 
 int main()
 {
-    int x_center, yc, radius;
-    cout << "Enter the center coordinates: ";
-    // Must enter positive coordinates
-    cin >> xc >> yc;
-    cout << "Enter the radius: ";
-    cin >> radius;
-    int gd = DETECT;
-    int gm = DETECT;
+    int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
+    int xc = 150, yc = 150, radius = 125;
     drawCircle(xc, yc, radius);
     getch();
     return 0;
 }
-
-/*
-Input Format:
-
-Enter the center coordinates: 150 150
-Enter the radius: 125
-*/
