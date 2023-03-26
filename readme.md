@@ -6,6 +6,19 @@
 - **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear)**
 - **Gmail: ahnafshahrearkhan@gmail.com**
 
+## Index
+- **Draw the national flag of Bangladesh ✓**
+- **Hidden Surface Elimination or Visual Surface Ditection ✓**
+- **2D Translation, Rotation & Scaling ✓**
+- **Create a Sphere, Elipsoid & Torus**
+- **Draw a super Elipsoid**
+- **Create Bejier Curve ✓**
+- **Cohen Sutherland Line Clipping Algorithm ✓**
+- **Polygon Clipping** 
+- **Bresenham Line Drawing Algorithm ✓**
+- **Bresenham Circle Drawing Algorithm ✓**
+- **Fractal geometry - snowflake pattern**
+
 ## CodeBlocks setup instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
 - Download Graphics Library: https://drive.google.com/file/d/1z19xxKm2YseQi7QGxqCCdJ-lLfiEGuCm/view
@@ -15,16 +28,3 @@
 - Now go to **CodeBlocks -> Settings -> Compiler** 
 - Go to "Toolchain executables" & change Compiler's installation directory to **"C:\\TDM-GCC-32"**
 - Go to "Linker Settigns" -> Other linker options & add **"-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32"**
-
-## Index
-- **Draw the national flag of Bangladesh ✓**
-- **Hidden Surface Elimination or Visual Surface Ditection ✓**
-- **2D Translation, Rotation & Scaling ✓**
-- **Create a Sphere, Elipsoid & Torus**
-- **Draw a super Elipsoid**
-- **Create Bejier Curve**
-- **Cohen Sutherland Line Clipping Algorithm ✓**
-- **Polygon Clipping** 
-- **Bresenham Line Drawing Algorithm ✓**
-- **Bresenham Circle Drawing Algorithm ✓**
-- **Fractal geometry - snowflake pattern**
