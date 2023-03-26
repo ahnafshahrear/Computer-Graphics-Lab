@@ -7,17 +7,17 @@
 - **Gmail: ahnafshahrearkhan@gmail.com**
 
 ## Index
-- **Draw the national flag of Bangladesh ✓**
+- **Draw The National Flag of Bangladesh ✓**
 - **Hidden Surface Elimination or Visual Surface Ditection ✓**
-- **2D Translation, Rotation & Scaling ✓**
-- **Create a Sphere, Elipsoid & Torus**
-- **Draw a super Elipsoid**
-- **Create Bejier Curve ✓**
+- **Two Dimentional Translation, Rotation & Scaling ✓**
+- **Draw Sphere, Elipsoid & Torus**
+- **Draw Super Elipsoid**
+- **Create a Bejier Curve ✓**
 - **Cohen Sutherland Line Clipping Algorithm ✓**
 - **Polygon Clipping** 
 - **Bresenham Line Drawing Algorithm ✓**
 - **Bresenham Circle Drawing Algorithm ✓**
-- **Fractal geometry - snowflake pattern**
+- **Fractal Geometry - Snowflake Pattern**
 
 ## CodeBlocks setup instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
