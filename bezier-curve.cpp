@@ -3,8 +3,6 @@
 
 using namespace std;
 
-vector<pair<int, int>> points = {{27, 243}, {101, 47}, {324, 197}, {437, 23}};
-
 int factorial(int n)
 {
     if (!n)
@@ -34,9 +32,9 @@ double bezierFunction(int i, int n, double u)
     return nCr(n, i) * power(u, i) * power((1 - u), (n - i));
 }
 
-void bezierCurve()
+void bezierCurve(vector<pair<int, int>> xy)
 {
-    int n = points.size() - 1;
+    int n = xy.size() - 1;
     double eps = 0.0005;
     for (double u = 0; u <= 1; u += eps)
     {
@@ -44,12 +42,12 @@ void bezierCurve()
         for (int i = 0; i <= n; i++)
         {
             double bez = bezierFunction(i, n, u);
-            x += points[i].first * bez;
-            y += points[i].second * bez;
+            x += xy[i].first * bez;
+            y += xy[i].second * bez;
         }
         putpixel(x, y, WHITE);
     }
-    for (auto x: points)
+    for (auto x: xy)
     {
         putpixel(x.first, x.second, WHITE);
         circle(x.first, x.second, 5);
@@ -60,7 +58,8 @@ int main()
 {
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
-    bezierCurve();
+    vector<pair<int, int>> xy = {{27, 243}, {101, 47}, {324, 197}, {437, 23}};
+    bezierCurve(xy);
     getch();
     return 0;
 }
