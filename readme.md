@@ -2,7 +2,7 @@
 - **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
 - **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
 
-### 📄 Lab Tasks
+### Lab Tasks
 - **Draw The National Flag of Bangladesh ✓**
 - **Simulate Hidden Surface Elimination or Visual Surface Detection ✓**
 - **Simulate Two Dimensional Translation, Rotation & Scaling ✓**
@@ -13,7 +13,7 @@
 - **Implement the Bresenham Circle Drawing Algorithm ✓**
 - **Draw the Snowflake Pattern with Fractal Geometry**
 
-### 📄 CodeBlocks Setup Instructions
+### CodeBlocks Setup Instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
 - Download Graphics Library: https://drive.google.com/file/d/1z19xxKm2YseQi7QGxqCCdJ-lLfiEGuCm/view
 - Extract Graphics Library
