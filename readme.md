@@ -3,14 +3,14 @@
 - **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
 
 ### Lab Tasks
-- **Draw The National Flag of Bangladesh ✓**
-- **Simulate Hidden Surface Elimination or Visual Surface Detection ✓**
-- **Simulate Two Dimensional Translation, Rotation & Scaling ✓**
+- **Draw the National Flag of Bangladesh ✓**
+- **Simulate 2D Geometric Translation, Rotation & Scaling ✓**
+- **Implement the Bresenham Line Drawing algorithm ✓**
+- **Implement the Bresenham Circle Drawing algorithm ✓**
 - **Create a Bejier Curve ✓**
 - **Implement the Cohen Sutherland Line Clipping algorithm ✓**
 - **Implement the Sutherland Hodgman Polygon Clipping algorithm** 
-- **Implement the Bresenham Line Drawing Algorithm ✓**
-- **Implement the Bresenham Circle Drawing Algorithm ✓**
+- **Illustrate Hidden Surface Elimination or Visual Surface Detection ✓**
 - **Draw the Snowflake Pattern with Fractal Geometry**
 
 ### CodeBlocks Setup Instructions
