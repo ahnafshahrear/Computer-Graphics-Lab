@@ -1,5 +1,5 @@
-# Computer Graphics
-- **3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi**
+# Computer Graphics Lab
+- **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
 - **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
 
 ## Index
