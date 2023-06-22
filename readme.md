@@ -1,23 +1,17 @@
 # Computer Graphics
-### 3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi
-
-## Author
-- **Ahnaf Shahrear Khan, Computer Science & Engineering, University of Rajshahi**
-- **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear)**
-- **Gmail: ahnafshahrearkhan@gmail.com**
+- **3rd Year 2nd Semester - Computer Science & Engineering, University of Rajshahi**
+- **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
 
 ## Index
 - **Draw The National Flag of Bangladesh ✓**
-- **Hidden Surface Elimination or Visual Surface Ditection ✓**
-- **Two Dimentional Translation, Rotation & Scaling ✓**
-- **Draw Sphere, Elipsoid & Torus**
-- **Draw Super Elipsoid**
+- **Simulate Hidden Surface Elimination or Visual Surface Ditection ✓**
+- **Simulate Two Dimentional Translation, Rotation & Scaling ✓**
 - **Create a Bejier Curve ✓**
-- **Cohen Sutherland Line Clipping Algorithm ✓**
-- **Polygon Clipping** 
-- **Bresenham Line Drawing Algorithm ✓**
-- **Bresenham Circle Drawing Algorithm ✓**
-- **Fractal Geometry - Snowflake Pattern**
+- **Implement the Cohen Sutherland Line Clipping algorithm ✓**
+- **Implement the Sutherland Hodgman Polygon Clipping algorithm** 
+- **Implement the Bresenham Line Drawing Algorithm ✓**
+- **Implement the Bresenham Circle Drawing Algorithm ✓**
+- **Draw the Snowflake Pattern with Fractal Geometry**
 
 ## CodeBlocks setup instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
