@@ -27,5 +27,4 @@ int main()
     floodfill(41, 41, WHITE);
 
     getchar();
-    return 0;
 }
