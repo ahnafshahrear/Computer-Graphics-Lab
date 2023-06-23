@@ -48,8 +48,10 @@ int main()
     return 0;
 }
 
-/*
-Input Format:
+/*//... Input Output:
 
-RTC or CRT or TCR...
-*/
+...............Input:
+
+RTC or CRT or TCR
+
+*///... Ahnaf Shahrear Khan
