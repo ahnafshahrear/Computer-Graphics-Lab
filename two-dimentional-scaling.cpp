@@ -3,10 +3,9 @@
 
 using namespace std;
 
-int gd = DETECT, gm;
-int point;
-int x[10], y[10];
-int sfx, sfy;
+int point; //... Total vertex of the polygon
+int x[10], y[10]; //... (x,y) coordinates of each vertex
+int sfx, sfy; //... Scaling factors
 
 void draw()
 {
@@ -27,32 +26,33 @@ void scale()
 
 int main()
 {
-    cout << "Enter no. of sides in polygon: ";
-    cin >> point;
-    cout << "Enter each vertex coordinates:\n";
+    cin >> point; //... Total vertex of the polygon
     for (int i = 0; i < point; i++)
     {
-        cin >> x[i] >> y[i];
+        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
     }
-    cout << "Enter scaling factors(sfx & sfy): ";
-    cin >> sfx >> sfy;
-    initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
+    cin >> sfx >> sfy; //... Scaling factors
+
+    int gd = DETECT, gm = DETECT;
+    initgraph(&gd, &gm, "");
+
+    setcolor(YELLOW);
+    draw(); //... Polygon before translation
+    scale(); //... Applying 2d geometric scaling
     setcolor(WHITE);
-    draw();
-    scale();
-    setcolor(RED);
-    draw();
+    draw(); //... Polygon after translation
+
     getch();
     return 0;
 }
 
-/*
-Input Format:
-Enter no. of sides in polygon: 4
-Enter each vertex coordinates:
-1 1
-1 100
+/*//... Input Output:
+
+...............Input:
+3
 100 100
-100 1
-Enter scale factors(sfx & sfy):3 2
-*/
+100 200
+200 100
+2 2
+
+*///... Ahnaf Shahrear Khan...
