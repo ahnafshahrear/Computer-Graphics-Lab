@@ -37,10 +37,10 @@ int main()
     initgraph(&gd, &gm, "");
 
     setcolor(YELLOW);
-    draw(); //... A yellow colored polygon before translation
-    translate(); //... Applying translation factors
+    draw(); //... The polygon before translation
+    translate(); //... Applying 2d geometric translation
     setcolor(WHITE);
-    draw(); //... A white colored polygon after translation
+    draw(); //... The polygon after translation
 
     getch();
     return 0;
@@ -49,7 +49,6 @@ int main()
 /*//... Input Output:
 
 ...............Input:
-
 3
 100 100
 100 200
