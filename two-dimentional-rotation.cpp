@@ -3,15 +3,14 @@
 
 using namespace std;
 
-// To convert Degree to Radian
+//... To convert degree to radian
 #define Sin(x) sin(x * acos(-1.0) / 180)
 #define Cos(x) cos(x * acos(-1.0) / 180)
 
-int gd = DETECT, gm;
-int point; // Total number of vertices
-double x[10], y[10];
-double angle; // Rotation angle
-double xPivot, yPivot; // Pivot points
+int point; //... Total vertex of the polygon
+int x[10], y[10]; //... (x,y) coordinates of each vertex
+int angle; //... Rotation angle in degree
+int xPivot, yPivot; //... Pivot point coordinates
 
 void draw()
 {
@@ -25,7 +24,7 @@ void rotation()
 {
     for (int i = 0; i < point; i++)
     {
-        double xShift = x[i] - xPivot, yShift = y[i] - yPivot;
+        int xShift = x[i] - xPivot, yShift = y[i] - yPivot;
         x[i] = xPivot + (xShift * Cos(angle)) - (yShift * Sin(angle));
         y[i] = yPivot + (xShift * Sin(angle)) + (yShift * Cos(angle));
 
@@ -34,35 +33,36 @@ void rotation()
 
 int main()
 {
-    cout << "Enter no. of sides in polygon: ";
-    cin >> point;
-    cout << "Enter each vertex coordinates:\n";
+    cin >> point; //... Total vertex of the polygon
     for (int i = 0; i < point; i++)
     {
-        cin >> x[i] >> y[i];
+        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
     }
-    cout << "Enter rotation angle: ";
-    cin >> angle;
-    cout << "Enter pivot points: ";
-    cin >> xPivot >> yPivot;
-    initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
-    setcolor(RED);
-    draw();
-    rotation();
+    cin >> angle; //... Rotation angle in degree
+    cin >> xPivot >> yPivot; //... Pivot point coordinates
+
+    int gd = DETECT, gm = DETECT;
+    initgraph(&gd, &gm, "");
+
+    setcolor(YELLOW);
+    draw(); //... The polygon before rotation
+    rotation(); //... Applying 2d geometric rotation
     setcolor(WHITE);
-    draw();
+    draw(); //... The polygon before rotation
+
     getch();
     return 0;
 }
 
-/*
-Input Format:
-Enter no. of sides in polygon: 4
-Enter each vertex coordinates:
+/*//... Input Output:
+
+...............Input:
+4
 100 100
 100 200
 200 200
 200 100
-Enter rotation angle: 45
-Enter pivot points: 200 200
-*/
+45
+200 200
+
+*///... Ahnaf Shahrear Khan...
