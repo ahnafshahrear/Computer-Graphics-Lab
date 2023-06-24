@@ -3,12 +3,9 @@
 
 using namespace std;
 
-int gd = DETECT;
-int gm = DETECT;
-
-int point;
-int x[10], y[10];
-int tx, ty;
+int point; //... Total vertex of the polygon
+int x[10], y[10]; //... (x,y) coordinates of each vertex
+int tx, ty; //... Translation factors
 
 void draw()
 {
@@ -29,33 +26,34 @@ void translate()
 
 int main()
 {
-    cout << "Enter no. of sides in polygon: ";
-    cin >> point;
-    cout << "Enter each vertex coordinates:\n";
+    cin >> point; //... Total vertex of the polygon
     for (int i = 0; i < point; i++)
     {
-        cin >> x[i] >> y[i];
+        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
     }
-    cout << "Enter translation factors(tx & ty): ";
-    cin >> tx >> ty;
+    cin >> tx >> ty; //... Translation factors
+
+    int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
-    setcolor(RED);
-    draw();
-    translate();
+
+    setcolor(YELLOW);
+    draw(); //... A yellow colored polygon before translation
+    translate(); //... Applying translation factors
     setcolor(WHITE);
-    draw();
+    draw(); //... A white colored polygon after translation
+
     getch();
     return 0;
 }
 
-/*
-Input Format:
+/*//... Input Output:
 
-Enter no. of sides in polygon: 4
-Enter each vertex coordinates:
-1 1
-1 100
+...............Input:
+
+3
 100 100
-100 1
-Enter translation factors(sfx & sfy):150 50
-*/
+100 200
+200 100
+100 100
+
+*///... Ahnaf Shahrear Khan...
