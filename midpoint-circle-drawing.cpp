@@ -6,18 +6,19 @@ using namespace std;
 void drawCircle(int xc, int yc, int radius)
 {
     vector<pair<int, int>> points;
-    int x = 0, y = radius, p = 3 - (2 * radius);
-    while (y >= x)
+    int x = 0, y = radius;
+    int p = 1 - radius;
+    while (x < y)
     {
         points.push_back({x, y});
         points.push_back({y, x});
         x++;
         if (p >= 0)
         {
+            p += 2 * (x - y) + 1;
             y--;
-            p += 4 * (x - y) + 10;
         }
-        else p += (4 * x) + 6;
+        else p += 2 * x + 1;
     }
     for (auto v: points)
     {
