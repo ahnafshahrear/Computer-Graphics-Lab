@@ -37,10 +37,10 @@ int main()
     initgraph(&gd, &gm, "");
 
     setcolor(YELLOW);
-    draw(); //... Polygon before translation
+    draw(); //... The polygon before scaling
     scale(); //... Applying 2d geometric scaling
     setcolor(WHITE);
-    draw(); //... Polygon after translation
+    draw(); //... The polygon after scaling
 
     getch();
     return 0;
