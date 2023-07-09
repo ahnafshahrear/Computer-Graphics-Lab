@@ -39,6 +39,7 @@ void bezierCurve(vector<pair<int, int>> xy)
     }
     for (auto x: xy)
     {
+        delay(1000);
         putpixel(x.first, x.second, WHITE);
         circle(x.first, x.second, 5);
     }
