@@ -12,7 +12,7 @@
 - **Implement the Cohen Sutherland Line Clipping algorithm ✓**
 - **Implement the Sutherland Hodgman Polygon Clipping algorithm** 
 - **Create the Bejier Curve ✓**
-- **Draw the Snowflake Pattern with Fractal Geometry**
+- **Draw the Snowflake Pattern with Fractal Geometry ✓**
 
 ### CodeBlocks Setup Instructions
 - Download **TDM GCC 32 Bit Compiler** from this link: https://jmeubank.github.io/tdm-gcc/
