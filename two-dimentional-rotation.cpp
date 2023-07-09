@@ -1,68 +1,59 @@
-#include <bits/stdc++.h>
 #include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-//... To convert degree to radian
-#define Sin(x) sin(x * acos(-1.0) / 180)
-#define Cos(x) cos(x * acos(-1.0) / 180)
-
-int point; //... Total vertex of the polygon
-int x[10], y[10]; //... (x,y) coordinates of each vertex
-int angle; //... Rotation angle in degree
-int xPivot, yPivot; //... Pivot point coordinates
-
-void draw()
+void draw(vector<int> x, vector<int> y)
 {
-    for (int i = 0; i < point; i++)
+    int n = x.size();
+    for (int i = 0; i < n; i++)
     {
-        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
+        line(x[i], y[i], x[(i + 1) % n], y[(i + 1) % n]);
     }
 }
 
-void rotation()
+void rotation(vector<int> &x, vector<int> &y, int n, int angle, int xp, int yp)
 {
-    for (int i = 0; i < point; i++)
+    for (int i = 0; i < n; i++)
     {
-        int xShift = x[i] - xPivot, yShift = y[i] - yPivot;
-        x[i] = xPivot + (xShift * Cos(angle)) - (yShift * Sin(angle));
-        y[i] = yPivot + (xShift * Sin(angle)) + (yShift * Cos(angle));
-
+        double radian_angle = angle * (acos(-1.0) / 180), sin_term = sin(radian_angle), cos_term = cos(radian_angle);
+        int x_shift = x[i] - xp, y_shift = y[i] - yp;
+        x[i] = xp + (x_shift * cos_term) - (y_shift * sin_term);
+        y[i] = yp + (x_shift * sin_term) + (y_shift * cos_term);
     }
 }
 
 int main()
 {
-    cin >> point; //... Total vertex of the polygon
-    for (int i = 0; i < point; i++)
+    int n; //... Total vertex of the polygon
+    cin >> n;
+    vector<int> x(n), y(n); //... (x,y) coordinates of vertex points
+    for (int i = 0; i < n; i++)
     {
-        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
+        cin >> x[i] >> y[i];
     }
-    cin >> angle; //... Rotation angle in degree
-    cin >> xPivot >> yPivot; //... Pivot point coordinates
+    int angle; //... Rotation angle in degree
+    cin >> angle;
+    int x_pivot, y_pivot; //... Pivot point coordinates
+    cin >> x_pivot >> y_pivot;
 
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
 
-    setcolor(YELLOW);
-    draw(); //... The polygon before rotation
-    rotation(); //... Applying 2d geometric rotation
     setcolor(WHITE);
-    draw(); //... The polygon before rotation
+    draw(x, y); //... White polygon before rotation
+    rotation(x, y, n, angle, x_pivot, y_pivot); //... Applying 2d geometric rotation
+    setcolor(YELLOW);
+    draw(x, y); //... Yellow polygon after rotation
 
     getch();
+    closegraph();
     return 0;
 }
 
-/*//... Input Output:
+/*//... Sample Input-Output:
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Input:
+4 100 100 100 200 200 200 200 100 45 200 200
 
-...............Input:
-4
-100 100
-100 200
-200 200
-200 100
-45
-200 200
-
-*///... Ahnaf Shahrear Khan...
+*///...
