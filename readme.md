@@ -1,6 +1,7 @@
 ## Computer Graphics Lab
-- **3rd Year 2nd Semester, Computer Science & Engineering, University of Rajshahi**
-- **GitHub: [@ahnafshahrear](https://github.com/ahnafshahrear) | Gmail: ahnafshahrearkhan@gmail.com**
+- **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
+- **Computer Science & Engineering, University of Rajshahi**
+- **Code:**`CSE3222`
 
 ### Lab Tasks
 - **Draw the National Flag of Bangladesh ✓**
