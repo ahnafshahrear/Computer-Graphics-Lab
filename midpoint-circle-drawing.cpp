@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
 #include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -38,5 +38,6 @@ int main()
     drawCircle(xc, yc, radius);
 
     getch();
+    closegraph();
     return 0;
 }
