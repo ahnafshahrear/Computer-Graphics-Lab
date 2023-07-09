@@ -1,23 +1,20 @@
-#include <bits/stdc++.h>
 #include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int point; //... Total vertex of the polygon
-int x[10], y[10]; //... (x,y) coordinates of each vertex
-int sfx, sfy; //... Scaling factors
-
-void draw()
+void draw(vector<int> x, vector<int> y)
 {
-    for (int i = 0; i < point; i++)
+    int n = x.size();
+    for (int i = 0; i < n; i++)
     {
-        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
+        line(x[i], y[i], x[(i + 1) % n], y[(i + 1) % n]);
     }
 }
 
-void scale()
+void scale(vector<int> &x, vector<int> &y, int n, int sfx, int sfy)
 {
-    for (int i = 0; i < point; i++)
+    for (int i = 0; i < n; i++)
     {
         x[i] = x[i] * sfx;
         y[i] = y[i] * sfy;
@@ -26,33 +23,33 @@ void scale()
 
 int main()
 {
-    cin >> point; //... Total vertex of the polygon
-    for (int i = 0; i < point; i++)
+    int n; //... Total vertex of the polygon
+    cin >> n;
+    vector<int> x(n), y(n); //... (x,y) coordinates of polygon vertex points
+    for (int i = 0; i < n; i++)
     {
-        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
+        cin >> x[i] >> y[i];
     }
-    cin >> sfx >> sfy; //... Scaling factors
+    int sfx, sfy; //... Scaling factors
+    cin >> sfx >> sfy;
 
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
 
-    setcolor(YELLOW);
-    draw(); //... The polygon before scaling
-    scale(); //... Applying 2d geometric scaling
     setcolor(WHITE);
-    draw(); //... The polygon after scaling
+    draw(x, y); //... The polygon before scaling
+    scale(x, y, n, sfx, sfy); //... Applying geometric scaling
+    setcolor(YELLOW);
+    draw(x, y); //... The polygon after scaling
 
     getch();
+    closegraph();
     return 0;
 }
 
-/*//... Input Output:
+/*//... Sample Input-Output:
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Input:
+4 100 100 100 150 150 150 150 100 2 2
 
-...............Input:
-3
-100 100
-100 200
-200 100
-2 2
-
-*///... Ahnaf Shahrear Khan...
+*///...
