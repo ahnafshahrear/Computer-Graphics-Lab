@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
 #include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -33,5 +33,6 @@ int main()
     drawLine(x1, y1, x2, y2);
 
     getch();
+    closegraph();
     return 0;
 }
