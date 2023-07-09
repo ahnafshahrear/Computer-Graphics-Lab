@@ -1,23 +1,19 @@
-#include <bits/stdc++.h>
 #include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int point; //... Total vertex of the polygon
-int x[10], y[10]; //... (x,y) coordinates of each vertex
-int tx, ty; //... Translation factors
-
-void draw()
+void draw(vector<int> x, vector<int> y, int n)
 {
-    for (int i = 0; i < point; i++)
+    for (int i = 0; i < n; i++)
     {
-        line(x[i], y[i], x[(i + 1) % point], y[(i + 1) % point]);
+        line(x[i], y[i], x[(i + 1) % n], y[(i + 1) % n]);
     }
 }
 
-void translate()
+void translate(vector<int> &x, vector<int> &y, int n, int tx, int ty)
 {
-    for (int i = 0; i < point; i++)
+    for (int i = 0; i < n; i++)
     {
         x[i] += tx;
         y[i] += ty;
@@ -26,33 +22,37 @@ void translate()
 
 int main()
 {
-    cin >> point; //... Total vertex of the polygon
-    for (int i = 0; i < point; i++)
+    int n; //... Number of vertex of the polygon
+    cin >> n;
+    vector<int> x(n), y(n); //... (x,y) coordinates of vertex
+    for (int i = 0; i < n; i++)
     {
-        cin >> x[i] >> y[i]; //... (x,y) coordinates of each vertex
+        cin >> x[i] >> y[i];
     }
-    cin >> tx >> ty; //... Translation factors
+    int tx, ty; //... Translation factors
+    cin >> tx >> ty;
 
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
 
-    setcolor(YELLOW);
-    draw(); //... The polygon before translation
-    translate(); //... Applying 2d geometric translation
     setcolor(WHITE);
-    draw(); //... The polygon after translation
+    draw(x, y, n); //... The polygon before translation
+    translate(x, y, n, tx, ty); //... Applying 2d translation
+    setcolor(YELLOW);
+    draw(x, y, n); //... The polygon after translation
 
     getch();
+    closegraph();
     return 0;
 }
 
-/*//... Input Output:
-
-...............Input:
+/*//... Sample Input-Output:
+___________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Input:
 3
 100 100
 100 200
 200 100
 100 100
 
-*///... Ahnaf Shahrear Khan...
+*///...
