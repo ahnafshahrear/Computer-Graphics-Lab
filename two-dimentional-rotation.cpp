@@ -27,7 +27,7 @@ int main()
 {
     int n; //... Total vertex of the polygon
     cin >> n;
-    vector<int> x(n), y(n); //... (x,y) coordinates of vertex points
+    vector<int> x(n), y(n); //... (x,y) coordinates of vertex polygon points
     for (int i = 0; i < n; i++)
     {
         cin >> x[i] >> y[i];
