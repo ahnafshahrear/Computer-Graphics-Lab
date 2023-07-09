@@ -5,11 +5,11 @@ using namespace std;
 
 int factorial(int n)
 {
-    if (!n)
+    if (n)
     {
-        return 1;
+        return n * factorial(n - 1);
     }
-    return n * factorial(n - 1);
+    return 1;
 }
 
 double nCr(int n, int r)
@@ -17,33 +17,23 @@ double nCr(int n, int r)
     return factorial(n) / (double)(factorial(r) * factorial(n - r));
 }
 
-double power(double p, double n)
+double bezierFunction(int k, int n, double u)
 {
-    double ans = 1.0;
-    while (n--)
-    {
-        ans = ans * p;
-    }
-    return ans;
-}
-
-double bezierFunction(int i, int n, double u)
-{
-    return nCr(n, i) * power(u, i) * power((1 - u), (n - i));
+    return nCr(n, k) * pow(u, k) * pow((1 - u), (n - k));
 }
 
 void bezierCurve(vector<pair<int, int>> xy)
 {
     int n = xy.size() - 1;
-    double eps = 0.0005;
+    double eps = 0.0001;
     for (double u = 0; u <= 1; u += eps)
     {
         double x = 0, y = 0;
-        for (int i = 0; i <= n; i++)
+        for (int k = 0; k <= n; k++)
         {
-            double bez = bezierFunction(i, n, u);
-            x += xy[i].first * bez;
-            y += xy[i].second * bez;
+            double bez = bezierFunction(k, n, u);
+            x += xy[k].first * bez;
+            y += xy[k].second * bez;
         }
         putpixel(x, y, WHITE);
     }
@@ -63,5 +53,6 @@ int main()
     bezierCurve(xy);
 
     getch();
+    closegraph();
     return 0;
 }

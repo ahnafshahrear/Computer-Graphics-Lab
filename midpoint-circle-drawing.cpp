@@ -8,7 +8,7 @@ void drawCircle(int xc, int yc, int radius)
     vector<pair<int, int>> points;
     int x = 0, y = radius;
     int p = 1 - radius;
-    while (x < y)
+    while (x <= y)
     {
         points.push_back({x, y});
         points.push_back({y, x});
