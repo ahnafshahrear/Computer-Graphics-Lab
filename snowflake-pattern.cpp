@@ -20,7 +20,7 @@ void snowfalke(int x1, int y1, int x5, int y5, int it)
         }
     }
     else line (x1, y1, x5, y5);
-    delay(0);
+    delay(5);
 }
 
 int main()
