@@ -1,7 +1,7 @@
 ## Computer Graphics Lab
 - **[Ahnaf Shahrear Khan](https://github.com/ahnafshahrear)**
 - **Computer Science & Engineering, University of Rajshahi**
-- **Code:**`CSE3222`
+- **Code:** `CSE3222`
 
 ### Lab Tasks
 - **Draw the National Flag of Bangladesh ✓**
