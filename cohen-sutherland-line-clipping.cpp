@@ -19,14 +19,14 @@ int regionCode(int x, int y)
     return code;
 }
 
-void cohenSutherland(int x1, int y1, int x2, int y2)
+void cohenSutherland(double x1, double y1, double x2, double y2)
 {
     int code1 = regionCode(x1, y1);
     int code2 = regionCode(x2, y2);
     bool inside = false;
     while (true)
     {
-        int x, y;
+        double x, y;
         if (!(code1 | code2)) // Line is inside
         {
             inside = true;
@@ -75,8 +75,8 @@ void cohenSutherland(int x1, int y1, int x2, int y2)
     }
     if (inside)
     {
-        rectangle(xMin, yMin, xMax, yMax);
         setcolor(WHITE);
+        rectangle(xMin, yMin, xMax, yMax);
         line(x1, y1, x2, y2);
     }
 }
@@ -85,9 +85,11 @@ int main()
 {
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
-    while (true)
+    setcolor(RED);
+    line(200, 180, 20, 100);
+    //while (true)
     {
-        cohenSutherland(100, rand() % 1000, 700, 400);
+        cohenSutherland(200, 180, 20, 100);
         delay(100);
     }
     getch();

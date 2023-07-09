@@ -58,8 +58,10 @@ int main()
 {
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
+
     vector<pair<int, int>> xy = {{27, 243}, {101, 47}, {324, 197}, {437, 23}};
     bezierCurve(xy);
+
     getch();
     return 0;
 }

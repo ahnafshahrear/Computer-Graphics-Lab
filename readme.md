@@ -6,7 +6,7 @@
 - **Draw the National Flag of Bangladesh ✓**
 - **Simulate two dimensional geometric Translation, Rotation & Scaling ✓**
 - **Draw a line with the Bresenham Line Drawing algorithm ✓**
-- **Draw a circle with the Bresenham Circle Drawing algorithm ✓**
+- **Draw a circle with the Bresenham & Midpoint Circle Drawing algorithm ✓**
 - **Simulate Hidden Surface Elimination or Visual Surface Detection ✓**
 - **Implement the Cohen Sutherland Line Clipping algorithm ✓**
 - **Implement the Sutherland Hodgman Polygon Clipping algorithm** 
