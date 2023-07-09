@@ -1,9 +1,9 @@
-#include<bits/stdc++.h>
-#include<graphics.h>
+#include <graphics.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-void Triangle()
+void drawTriangle()
 {
     int x[] = {10, 50, 100}, y[] = {100, 20, 100};
     setcolor(GREEN);
@@ -15,7 +15,7 @@ void Triangle()
     floodfill(50, 25, GREEN);
 }
 
-void Circle()
+void drawCircle()
 {
     setcolor(BLUE);
     circle(100, 100, 45);
@@ -23,7 +23,7 @@ void Circle()
     floodfill(101, 101, BLUE);
 }
 
-void Rectangle()
+void drawRectangle()
 {
     setcolor(RED);
     rectangle(100, 100, 180, 180);
@@ -33,25 +33,18 @@ void Rectangle()
 
 int main()
 {
-    string sequence;
-    cin >> sequence;
-	int gd = DETECT;
-	int gm = DETECT;
-	initgraph(&gd, &gm, "");
+    int gd = DETECT, gm = DETECT;
+    initgraph(&gd, &gm, "");
+
+    string sequence = "RCT";
     for (char x: sequence)
     {
-        if (x == 'C') Circle();
-        else if (x == 'T') Triangle();
-        else Rectangle();
+        if (x == 'C') drawCircle();
+        else if (x == 'T') drawTriangle();
+        else drawRectangle();
     }
+
     getch();
+    closegraph();
     return 0;
 }
-
-/*//... Input Output:
-
-...............Input:
-
-RTC or CRT or TCR
-
-*///... Ahnaf Shahrear Khan
