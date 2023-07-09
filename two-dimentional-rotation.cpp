@@ -16,10 +16,9 @@ void rotation(vector<int> &x, vector<int> &y, int n, int angle, int xp, int yp)
 {
     for (int i = 0; i < n; i++)
     {
-        double radian_angle = angle * (acos(-1.0) / 180), sin_term = sin(radian_angle), cos_term = cos(radian_angle);
+        double radian = angle * (acos(-1.0) / 180), sin_term = sin(radian), cos_term = cos(radian);
         int x_shift = x[i] - xp, y_shift = y[i] - yp;
-        x[i] = xp + (x_shift * cos_term) - (y_shift * sin_term);
-        y[i] = yp + (x_shift * sin_term) + (y_shift * cos_term);
+        x[i] = xp + (x_shift * cos_term) - (y_shift * sin_term); y[i] = yp + (x_shift * sin_term) + (y_shift * cos_term);
     }
 }
 
@@ -27,7 +26,7 @@ int main()
 {
     int n; //... Total vertex of the polygon
     cin >> n;
-    vector<int> x(n), y(n); //... (x,y) coordinates of vertex polygon points
+    vector<int> x(n), y(n); //... (x,y) coordinates of vertex points
     for (int i = 0; i < n; i++)
     {
         cin >> x[i] >> y[i];
