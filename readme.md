@@ -6,7 +6,7 @@
 ### Lab Tasks
 - **Draw the National Flag of Bangladesh ✓**
 - **Simulate two dimensional geometric ◦ Translation ✓ ◦ Rotation ✓ ◦ Scaling ✓**
-- **Draw a line with the Bresenham Line Drawing algorithm ✓**
+- **Draw a line with the Bresenham Line algorithm ✓**
 - **Draw a circle with the Midpoint Circle Drawing algorithm ✓**
 - **Simulate Visual Surface Detection ✓**
 - **Clip line with the Cohen Sutherland Line Clipping algorithm ✓**
