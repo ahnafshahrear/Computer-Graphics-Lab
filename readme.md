@@ -9,7 +9,7 @@
 - **Draw a line with the Bresenham Line algorithm ✓**
 - **Draw a circle with the Midpoint Circle Drawing algorithm ✓**
 - **Simulate Visual Surface Detection ✓**
-- **Clip line with the Cohen Sutherland Line Clipping algorithm ✓**
+- **Clip a line with the Cohen Sutherland Line Clipping algorithm ✓**
 - **Clip polygon with the Sutherland Hodgman Polygon Clipping algorithm** 
 - **Create a Bejier Curve ✓**
 - **Draw the Snowflake Pattern with Fractal Geometry ✓**
