@@ -28,7 +28,7 @@ int main()
     int gd = DETECT, gm = DETECT;
     initgraph(&gd, &gm, "");
 
-    int iteration = 3;
+    int iteration = 4;
     vector<pair<int, int>> x = {{250, 15}, {50, 350}, {450, 350}};
     for (int i = 0; i < 3; i++)
     {
