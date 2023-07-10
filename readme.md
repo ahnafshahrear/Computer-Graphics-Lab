@@ -5,13 +5,13 @@
 
 ### Lab Tasks
 - **Draw the National Flag of Bangladesh ✓**
-- **Simulate two dimensional geometric Translation, Rotation & Scaling ✓**
+- **Simulate two dimensional geometric ◦ Translation ✓ ◦ Rotation ✓ ◦ Scaling ✓**
 - **Draw a line with the Bresenham Line Drawing algorithm ✓**
 - **Draw a circle with the Midpoint Circle Drawing algorithm ✓**
-- **Simulate Hidden Surface Elimination or Visual Surface Detection ✓**
-- **Implement the Cohen Sutherland Line Clipping algorithm ✓**
-- **Implement the Sutherland Hodgman Polygon Clipping algorithm** 
-- **Create the Bejier Curve ✓**
+- **Simulate Visual Surface Detection ✓**
+- **Clip line with the Cohen Sutherland Line Clipping algorithm ✓**
+- **Clip polygon with the Sutherland Hodgman Polygon Clipping algorithm** 
+- **Create a Bejier Curve ✓**
 - **Draw the Snowflake Pattern with Fractal Geometry ✓**
 
 ### CodeBlocks Setup Instructions
